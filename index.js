@@ -21,11 +21,12 @@ var isMobile = {
     };
 
 
-
-if ( isMobile.Android() ) {
-        document.location.href = "https://play.google.com/store/apps/details?id=com.StefMorojna.SpaceflightSimulator";
+window.addEventListener('load', function () {
+    if ( isMobile.Android() ) {
+            document.location.href = "https://play.google.com/store/apps/details?id=com.StefMorojna.SpaceflightSimulator";
+        }
+    else if(isMobile.iOS())
+    {
+    document.location.href="https://apps.apple.com/us/app/spaceflight-simulator/id1308057272";
     }
-else if(isMobile.iOS())
-{
-document.location.href="https://apps.apple.com/us/app/spaceflight-simulator/id1308057272";
-}
+})
