@@ -18,8 +18,4 @@ window.addEventListener('load', function () {
         document.location.href="https://apps.apple.com/us/app/spaceflight-simulator/id1308057272";
         document.getElementById("logo").src = "spaceflightsimulator.png";
     }
-    else
-    {
-        document.location.href = "https://www.google.com"
-    }
 })
