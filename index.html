@@ -6,7 +6,7 @@
     <link rel="icon" href="app_icon.png" type="image/x-icon">
     <style>
     body {
-        background-image: url("starry.png");
+        background-image: url("{{ url_for('static', filename='starry.png') }}");
         background-size: cover;
         height: 100%;
     }
@@ -16,6 +16,12 @@
         width: 80%;
         margin: 0 auto;
         margin-top: 20%;
+    }
+    .center img {
+        pointer-events: none;
+    }
+    #logo {
+        pointer-events: none;
     }
     .android {
         text-align: center;
@@ -36,7 +42,7 @@
   </head>
   <body>
       <div>
-          <img src="spaceflightsimulator.png" class="center"/>
+          <img class="center" id="logo">
           <a href='https://play.google.com/store/apps/details?id=com.StefMorojna.SpaceflightSimulator&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' class="android"/></a>
           <a href="https://apps.apple.com/us/app/spaceflight-simulator/id1308057272?itsct=apps_box&amp;itscg=30200"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-US?size=250x83&amp;releaseDate=1511913600&h=401295cccb7ad9b6850fb5bebe642a43" alt="Download on the App Store" class="ios"></a>
       </div>
